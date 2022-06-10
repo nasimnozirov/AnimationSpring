@@ -9,7 +9,7 @@
 import Spring
 
 class SpringAnimationViewController: UIViewController {
-
+    
     @IBOutlet var animationView: SpringView!
     @IBOutlet var springLabel: UILabel!
     
@@ -18,7 +18,6 @@ class SpringAnimationViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         springLabel.text = animation.description
-      
     }
     
     @IBAction func springAnimation(_ sender: SpringButton) {
@@ -36,6 +35,4 @@ class SpringAnimationViewController: UIViewController {
         sender.animation = "pop"
         sender.animate()
     }
-    
-
 }
