@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="acX-Ck-n31">
     <device id="retina6_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
@@ -9,69 +9,66 @@
     </dependencies>
     <scenes>
         <!--Spring Animation View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <scene sceneID="DJS-F7-pZv">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="SpringAnimationViewController" customModule="Lesson2_9" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                <viewController id="acX-Ck-n31" customClass="SpringAnimationViewController" customModule="Lesson2_9" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="qg6-6y-ejt">
                         <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i62-wQ-lHJ" customClass="SpringButton" customModule="Spring">
-                                <rect key="frame" x="195" y="647" width="38" height="39"/>
-                                <color key="backgroundColor" red="0.42954155859999998" green="0.6460440475" blue="0.75623422709999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
-                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                <state key="normal" title="Run">
-                                    <color key="titleColor" systemColor="systemBackgroundColor"/>
-                                    <color key="titleShadowColor" systemColor="secondarySystemGroupedBackgroundColor"/>
-                                </state>
-                                <connections>
-                                    <action selector="springAnimation:" destination="BYZ-38-t0r" eventType="touchUpInside" id="YAW-H7-qgz"/>
-                                </connections>
-                            </button>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AV4-vd-uMY" customClass="SpringView" customModule="Spring">
-                                <rect key="frame" x="70" y="144" width="288" height="200"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="48E-71-Uic" customClass="SpringView" customModule="Spring">
+                                <rect key="frame" x="64" y="132" width="300" height="250"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jl3-Yn-xVb">
-                                        <rect key="frame" x="34" y="12" width="220" height="176"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zRw-g8-kDW">
+                                        <rect key="frame" x="8" y="8" width="284" height="234"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <color key="textColor" systemColor="secondarySystemGroupedBackgroundColor"/>
+                                        <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
                                 <color key="backgroundColor" red="0.42954155859999998" green="0.6460440475" blue="0.75623422709999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="200" id="0jy-4U-1UH"/>
-                                    <constraint firstItem="jl3-Yn-xVb" firstAttribute="centerY" secondItem="AV4-vd-uMY" secondAttribute="centerY" id="Zpx-ct-YVd"/>
-                                    <constraint firstItem="jl3-Yn-xVb" firstAttribute="centerX" secondItem="AV4-vd-uMY" secondAttribute="centerX" id="h6m-Hl-f9X"/>
-                                    <constraint firstAttribute="width" constant="288" id="oEP-CW-TdS"/>
+                                    <constraint firstItem="zRw-g8-kDW" firstAttribute="leading" secondItem="48E-71-Uic" secondAttribute="leading" constant="8" id="6NC-WR-KH4"/>
+                                    <constraint firstAttribute="trailing" secondItem="zRw-g8-kDW" secondAttribute="trailing" constant="8" id="Tdb-tV-SN2"/>
+                                    <constraint firstItem="zRw-g8-kDW" firstAttribute="top" secondItem="48E-71-Uic" secondAttribute="top" constant="8" id="wpP-wv-o8J"/>
+                                    <constraint firstAttribute="bottom" secondItem="zRw-g8-kDW" secondAttribute="bottom" constant="8" id="wzA-EN-Di0"/>
                                 </constraints>
                             </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ljw-1O-iow" customClass="SpringButton" customModule="Spring">
+                                <rect key="frame" x="64" y="737" width="300" height="30"/>
+                                <color key="backgroundColor" red="0.42954155859999998" green="0.6460440475" blue="0.75623422709999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Run">
+                                    <color key="titleColor" systemColor="systemBackgroundColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="springAnimation:" destination="acX-Ck-n31" eventType="touchUpInside" id="QvN-dI-w36"/>
+                                </connections>
+                            </button>
                         </subviews>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <viewLayoutGuide key="safeArea" id="nuj-w4-qay"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="AV4-vd-uMY" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="100" id="431-vX-3vF"/>
-                            <constraint firstItem="AV4-vd-uMY" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="70" id="ADa-B7-WsO"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="i62-wQ-lHJ" secondAttribute="bottom" multiplier="1.3" id="NWP-Ss-53j"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="AV4-vd-uMY" secondAttribute="trailing" constant="70" id="jy4-on-RHy"/>
-                            <constraint firstItem="i62-wQ-lHJ" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="uYO-mg-eFh"/>
+                            <constraint firstItem="48E-71-Uic" firstAttribute="height" secondItem="qg6-6y-ejt" secondAttribute="height" multiplier="0.269978" id="JYv-La-4jb"/>
+                            <constraint firstItem="48E-71-Uic" firstAttribute="width" secondItem="qg6-6y-ejt" secondAttribute="width" multiplier="0.700935" id="KNa-Oh-frM"/>
+                            <constraint firstItem="nuj-w4-qay" firstAttribute="bottom" secondItem="Ljw-1O-iow" secondAttribute="bottom" constant="125" id="QG8-Jw-sqh"/>
+                            <constraint firstItem="Ljw-1O-iow" firstAttribute="centerX" secondItem="nuj-w4-qay" secondAttribute="centerX" id="gra-Hd-pCG"/>
+                            <constraint firstItem="48E-71-Uic" firstAttribute="centerX" secondItem="nuj-w4-qay" secondAttribute="centerX" id="msl-Li-xZj"/>
+                            <constraint firstItem="Ljw-1O-iow" firstAttribute="width" secondItem="48E-71-Uic" secondAttribute="width" id="u8e-5O-ApW"/>
+                            <constraint firstItem="48E-71-Uic" firstAttribute="top" secondItem="nuj-w4-qay" secondAttribute="top" constant="88" id="yXR-3N-C03"/>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="animationView" destination="AV4-vd-uMY" id="aQ1-D6-2KW"/>
-                        <outlet property="springLabel" destination="jl3-Yn-xVb" id="l8G-KF-S2E"/>
+                        <outlet property="animationView" destination="48E-71-Uic" id="4gB-4d-C60"/>
+                        <outlet property="springLabel" destination="zRw-g8-kDW" id="Qyq-Xv-D9n"/>
                     </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Pfi-kF-OhB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="33.75" y="97.183098591549296"/>
+            <point key="canvasLocation" x="219" y="197"/>
         </scene>
     </scenes>
     <resources>
-        <systemColor name="secondarySystemGroupedBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

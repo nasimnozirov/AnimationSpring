@@ -11,8 +11,8 @@ import Spring
 class SpringAnimationViewController: UIViewController {
     
     //    MARK: IB Outlet
-    @IBOutlet var animationView: SpringView!
-    @IBOutlet var springLabel: UILabel! {
+    @IBOutlet weak var animationView: SpringView!
+    @IBOutlet weak var springLabel: UILabel! {
         didSet {
             springLabel.text = animation.description // тут при запуске показываем значение первой анимации
         }

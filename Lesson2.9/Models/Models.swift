@@ -17,11 +17,11 @@ struct Animation {
     
     var description: String { // здесь мы прописываем название и параметр анимации чтобы после отобразить во вю
     """
-    name: \(name)
-    curve: \(curve)
-    force: \(String(format: "%.02f", force ))
-    duration: \(String(format: "%.02f", duration ))
-    delay: \(String(format: "%.02f", delay ))
+           preset: \(name)
+           curve: \(curve)
+           force: \(String(format: "%.02f", force))
+           duration: \(String(format: "%.02f", duration))
+           delay: \(String(format: "%.02f", delay))
     """
         // округление нужно для того чтобы отобразить во вю параметры анимации тут именно надо использовать String(format чтобы округление было в виде текста а не числовое
     }
