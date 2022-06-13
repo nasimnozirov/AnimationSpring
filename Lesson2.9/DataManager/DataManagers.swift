@@ -11,8 +11,8 @@ import Spring
 class DataManager {
     
     static let shared = DataManager()
-    
-    let presets = Spring.AnimationPreset.allCases
+    // тут мы обращаемся к Фреймворк Spring и извлекаем перечисление и из enum извлекаем массив с анимации
+    let presets = Spring.AnimationPreset.allCases // метод  allCases возвращает массив анимации
     let curves = Spring.AnimationCurve.allCases
     
     private init() { }

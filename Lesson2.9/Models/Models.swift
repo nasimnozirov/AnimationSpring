@@ -11,27 +11,28 @@ struct Animation {
     
     let name: String
     let curve: String
-    let force: Float
-    let duration: Float
-    let delay: Float
+    let force: Double
+    let duration: Double
+    let delay: Double
     
-    var description: String {
-        """
-name: \(name)
-curve: \(curve)
-force: \(String(format: "%.02f", force ))
-duration: \(String(format: "%.02f", duration ))
-delay: \(String(format: "%.02f", delay ))
-"""
+    var description: String { // здесь мы прописываем название и параметр анимации чтобы после отобразить во вю
+    """
+    name: \(name)
+    curve: \(curve)
+    force: \(String(format: "%.02f", force ))
+    duration: \(String(format: "%.02f", duration ))
+    delay: \(String(format: "%.02f", delay ))
+    """
+        // округление нужно для того чтобы отобразить во вю параметры анимации тут именно надо использовать String(format чтобы округление было в виде текста а не числовое
     }
     
-    static func getRandomAnimation() -> Animation {
+    static func getRandomAnimation() -> Animation { // в этом статическом методе мы обращаемся в сервисному слою и оттуда берем массив с рандомными элементами и его исходящего значение если что то пойдет не так то мы установили любую анимацию чтобы мы не упали в рантайме. соотвественно этот метод возвращает одну анимацию которого мы и будем запускать
         Animation(
             name: DataManager.shared.presets.randomElement()?.rawValue ?? "pop",
             curve: DataManager.shared.curves.randomElement()?.rawValue ?? "linear",
-            force: Float.random(in: 1...2),
-            duration: Float.random(in: 1...2),
-            delay: Float.random(in: 1...2)
+            force: Double.random(in: 1...1.5), // тут устанавливаем параметры анимации
+            duration: Double.random(in: 0.8...1.6),
+            delay: 0.3
         )
     }
 }
